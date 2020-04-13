@@ -112,4 +112,19 @@ def enter_function(event):
     btn.invoke()
 
 
+# going to bind main window with enter key...
+
+main.bind('<Return>', enter_function)
+
+
+def repeatL():
+    while True:
+        takeQuery()
+
+
+t = threading.Thread(target=repeatL)
+
+t.start()
+
+main.mainloop()
 
