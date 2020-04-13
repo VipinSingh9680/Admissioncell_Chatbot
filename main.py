@@ -1,4 +1,9 @@
-
+from chatterbot import ChatBot
+from chatterbot.trainers import ListTrainer
+from tkinter import *
+import pyttsx3 as pp
+import speech_recognition as s
+import threading
 
 engine = pp.init()
 
